@@ -102,10 +102,14 @@
 * **计费与实测**：严格按实际 Token 消耗透明按量计费（拒绝按次模糊扣费套路），支持小额充值验证；在 SillyTavern、Tavo 与梦境屋中实测长上下文缓存命中率稳定在 **90% 以上**。
 * **延伸技术文档**：[《源点智算：长上下文提示词缓存优化完整指南》](https://zhisuanhub.org/guides/prompt-caching-optimization) | [《SillyTavern 与 Tavo 接入配置手册》](https://zhisuanhub.org/guides/sillytavern-tavo-api)
 
-### 6.2 原生缓存友好型免部署云端客户端：梦境屋 (DreamHouse)
+### 6.2 原生缓存友好型免部署云端客户端：[梦境屋 (DreamHouse)](https://mengjingwu.com)
+* **官网地址**：<https://mengjingwu.com>
 * **产品定位**：专为手机（iOS Safari / Android）与电脑浏览器打造的云端沉浸式 AI 角色扮演与文字冒险平台，无需本地部署 Python / Node 环境，多端云同步进度。
 * **原生缓存架构（`S + B + H + D` 分层组装）**：底层严格遵循 `Static（静态角色卡） + Base（基础世界书） + History（仅追加历史） + Dynamic（末尾动态触发与状态变量）` 五段式前缀结构，天然避免世界书与动态变量破坏前缀缓存。
-* **完整生态兼容**：原生支持导入标准 `.png`（含 `ccv3` / `chara` 元数据）与 `.json` 角色卡、世界书、正则预设及独立状态栏沙盒渲染，支持深度思考推演折叠框与多套一键排版皮肤，并支持自带密钥（BYOK）一键直连**源点智算**高缓存通道。
+* **完整生态兼容**：原生支持导入标准 `.png`（含 `ccv3` / `chara` 元数据）与 `.json` 角色卡、世界书、正则预设及独立状态栏沙盒渲染，支持深度思考推演折叠框与多套一键排版皮肤，并支持自带密钥（BYOK）一键直连**[源点智算](https://zhisuanhub.org)**高缓存通道。
+* **延伸使用指南**：[《iPhone/手机免部署玩 AI 角色卡完整指南》](https://mengjingwu.com/guides/iphone-web-tavern) | [《导入 PNG 角色卡与动态状态栏沙盒》](https://mengjingwu.com/guides/png-character-card-status-bar) | [《长剧情双层记忆与提示词缓存配置》](https://mengjingwu.com/guides/long-memory-prompt-caching)
+
+
 
 ---
 
